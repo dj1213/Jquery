@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js">
+    </script>
+<style>
+.j
+{
+ background-color: darkorange;
+ font-style: italic;
+ font-size:large;
+ font-variant:small-caps  
+}
+
+
+</style>
+</head>
+<body>
+    <button class="first">add</button>
+
+    <button class="second">remove</button>
+<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione eum nihil praesentium inventore, consequatur voluptatem, labore assumenda dolorum eius, quasi eos ullam tempora dolore velit animi libero incidunt provident magnam suscipit necessitatibus exercitationem dolor! Ratione deleniti id numquam temporibus, doloremque ex consectetur ipsam autem a aperiam mollitia, nobis fuga esse?
+</p>
+
+    <script>
+$(document).ready(function()
+{       
+    $(".first").click(function()
+    {
+      $("p").addClass("j")  
+    })
+
+    $(".second").click(function()
+    {
+      $("p").removeClass("j")  
+    })
+    
+})
+
+
+    </script>
+</body>
+</html>-

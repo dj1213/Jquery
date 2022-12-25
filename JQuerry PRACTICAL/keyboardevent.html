@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<script
+  src="https://code.jquery.com/jquery-3.6.3.min.js"
+  integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+  crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <h1>this is a paragraph</h1>
+    <div class="main">
+ Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione dolorem soluta maxime nesciunt hic quod voluptatum libero consequuntur mollitia fuga? Perspiciatis maiores ut tempora, mollitia, vitae totam molestias dignissimos at sit porro repellat atque velit ea quisquam ullam doloribus blanditiis aut voluptatibus unde error quas? Aspernatur maiores ad minus omnis?       
+    </div>
+
+    <script>
+        $(document).ready(function(){
+
+            $("body").keypress(function()
+            {
+                $(".main").css("background-color","red");
+            });
+
+        });
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  <script
+  src="https://code.jquery.com/jquery-3.6.3.min.js"
+  integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+  crossorigin="anonymous"></script>  
+<style>
+  div
+  {
+    height: 300px;
+    width: 100%;
+    background-color: darkgoldenrod;
+         position: absolute; 
+
+  }
+  .f1
+  {
+    height: 300px;
+    width: 100%;
+    background-color: darkred;
+
+
+
+  }
+  </style>
+</head>
+<body>
+    <div>
+    <div class="f1"></div>
+</div>
+<script>
+
+$(document).ready (function()
+{
+
+    $(".f1").click (function()
+    {
+        $("div").fadeToggle(2000).show(20);
+    });
+
+    $("div").click (function()
+    {
+        $(".f1").show(200);
+    });
+
+
+});
+
+
+
+
+
+
+
+// $(".f1").click (function()
+// {
+//     $(".f1").addClass(".x").css("border","2px solid green");
+// });
+
+// });
+
+
+</script>
+
+
+
+
+</body>
+</html>

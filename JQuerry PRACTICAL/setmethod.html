@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="/jquerycdn/jquery.js"></script>
+    <style>
+
+        .red{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div id="box1" class="box">
+        <p class="para">this is heading</p>
+        <h1 class="heading">this is a paragraph</h1>
+    </div>
+    
+    <input type="button" value="submit" class="button">
+
+    <!-- form -->
+    <form action="" id="foram">
+        <div>
+            <label for="">name</label>
+            <input type="text" id="name">
+        </div>
+
+        <div>
+            <label for="">class</label>
+            <input type="text" id="classes">
+        </div>
+
+        <div>
+            <input type="button" value="submit"  id="submit">
+        </div>
+
+    </form>
+    <script>
+    $(document).ready(function()
+    {
+        $(".button").click(function(){
+            $("#box1 .para").html("<i> this is <b> italic</b> font family</i>");
+        });
+
+        $(".button").click(function(){
+            $("#box1 .heading").text("using set method text");
+        });
+
+        $("body").keypress(function(){
+            $("#box1 .para").attr("class", "red");
+        });
+    });
+
+    $(document).ready(function(){
+
+        $("#submit").click(function(){
+
+            $("#name").val("jatinkumar makwana");
+            $("#classes").val("first class");
+            
+
+        });
+
+    });
+
+        
+      
+    </script>
+</body>
+</html>

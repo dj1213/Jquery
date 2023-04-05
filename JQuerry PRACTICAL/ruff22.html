@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+ul li
+{
+    display: inline-block;
+    position: relative;
+    color: brown;
+}
+ul li a
+{
+    text-decoration: none;
+    display: block;
+    padding: 5px;
+    color: brown;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+ul li::after
+
+{
+    content: " ";
+    position: absolute;
+    bottom: 0px;
+    height: 2px;
+    width: 100%;
+    opacity: 0.8;
+    left: 0px;
+    background-color: grey;
+    transform: scaleX(0);
+    transition:transform 0.4s ease-out;
+    transform-origin: bottom right;
+
+
+}
+
+ul li:hover::after
+{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+
+}
+
+
+
+/* ul li:hover
+{
+    transition: transform 0.1s ease-in-out;
+    animation-name: jatin;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+@keyframes jatin
+{
+    0%
+    {
+        transform: perspective(200px) scaleX(0);
+
+    }
+
+    50%
+    {
+        transform: perspective(200px) scaleX(1);
+
+    }
+    100%
+    {
+        transform: perspective(200px) scaleX(0);
+
+    }
+
+} */
+
+
+
+    </style>
+</head>
+<body>
+ 
+    
+    <ul>
+        <li><a href="">home</a></li>
+        <li><a href="">about</a></li>
+        <li><a href="">detail</a></li>
+        <li><a href="">gallary</a></li>
+        <li><a href="">contact</a></li>
+        <li><a href="">career</a></li>
+    </ul>
+</body>
+</html>

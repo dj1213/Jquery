@@ -11,23 +11,32 @@
   crossorigin="anonymous"></script>
     
 </head>
+
+<div class="div"></div>
+<input type="button" class="button" value="submit ">
+
 <body>
-    <h1>this is a paragraph</h1>
-    <div class="main">
- Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione dolorem soluta maxime nesciunt hic quod voluptatum libero consequuntur mollitia fuga? Perspiciatis maiores ut tempora, mollitia, vitae totam molestias dignissimos at sit porro repellat atque velit ea quisquam ullam doloribus blanditiis aut voluptatibus unde error quas? Aspernatur maiores ad minus omnis?       
-    </div>
+    
+<script>
 
-    <script>
-        $(document).ready(function(){
+$(document).ready(function()
+{
+  $(".button").keydown(function()
+  {
+    $(this).css("background-color","red");
+  });
 
-            $("body").keypress(function()
-            {
-                $(".main").css("background-color","red");
-            });
+  $("body").keypress(function()
+  {
+    $("body").css("background-color","green");
+  });
 
-        });
+  $("body").keyup(function(){
+    $("body").css("background","url(https://th.bing.com/th/id/OIP.NbfPECA64xbFnmW58MbWDQHaEo?pid=ImgDet&rs=1)  no-repeat ").css("background-size","cover").css("background-position","");
+  });
+});
 
 
-    </script>
+</script>
 </body>
 </html>

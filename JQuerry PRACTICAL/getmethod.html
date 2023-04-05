@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="/jquerycdn/jqueryuncompressed.js"></script>
+    <style>
+        #box1
+        {
+            background-color:brown;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="box1" class="testone">
+        <h1>website</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo qui optio temporibus fugit provident, sint consectetur ex? Eveniet nulla exercitationem maxime cumque nihil, reprehenderit voluptatibus minus officiis optio, quaerat ut enim adipisci porro pariatur maiores, accusantium rem odio error? Dolorum labore nobis voluptatum numquam autem aliquid corrupti neque exercitationem veniam!</p>
+    </div>
+
+    <div id="box2" class="test">
+        <h1>website</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo qui optio temporibus fugit provident, sint consectetur ex? Eveniet nulla exercitationem maxime cumque nihil, reprehenderit voluptatibus minus officiis optio, quaerat ut enim adipisci porro pariatur maiores, accusantium rem odio error? Dolorum labore nobis voluptatum numquam autem aliquid corrupti neque exercitationem veniam!</p>
+    </div>
+
+    <form action="" id="foram">
+        <div>
+            <label for="">first name</label>
+            <input type="text" id="firstname">
+        </div>
+
+        <div>
+            <label for="">email</label>
+            <input type="email" id="emailad">
+        </div>
+
+        <select name="" id="scountry">
+            <option value="state">state</option>
+            <option value="gujarat">gujarat</option>
+            <option value="goa">goa</option>
+            <option value="asam">asam</option>
+            <option value="sikkim">sikkim</option>
+        </select>
+
+        <div>
+            <input type="submit" id="button">
+        </div>
+    </form>
+    <script>
+
+        $(document).ready(function(){
+
+            var a = $("#box1").html();
+            console.log(a);
+            
+            var c = $("#box1").text();
+            console.log(c);
+
+            var b = $("#box2").attr("class");
+            console.log(b);
+        });
+
+        $(document).ready(function()
+        {
+            $("#foram").submit(function()
+            {
+                var jatin = $("#firstname").val()
+                var jatinemail = $("#emailad").val();
+                var jatincountry = $("#scountry").val();
+                alert(jatin + jatinemail + jatincountry);
+
+            });
+        });
+
+
+
+    </script>
+    
+</body>
+</html>

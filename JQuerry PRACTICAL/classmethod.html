@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="/jquerycdn/jquery.js"></script>
+    <!-- addclass, removeclass,toggle -->
+    <style>
+        .first
+        {
+            background-color: red;
+            border: 2px solid black;
+        }
+        .second
+        {
+            background-color: lightgreen;
+        }
+    </style>
+
+</head>
+<body>
+
+    <div id="box">
+        <h1>website</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas, perferendis.</p>
+    </div>
+
+    <input type="button" value="addclass" class="addclass">
+    <input type="button" value="removeclass" class="removeclass">
+    <input type="button" value="toggleclass" class="toggleclass">
+    
+</body>
+
+<script>
+    $(document).ready(function(){
+
+        $(".addclass").click(function(){
+            $("#box").addClass("first ");
+        });
+
+        $(".removeclass").click(function(){
+            $("#box").removeClass("first")
+        });
+
+        $(".toggleclass").click(function(){
+            $("#box").toggleClass("second");
+        });
+
+
+
+
+    });
+</script>
+</html>

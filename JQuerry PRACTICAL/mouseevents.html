@@ -6,47 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <script
-  src="https://code.jquery.com/jquery-3.6.3.min.js"
-  integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
-  crossorigin="anonymous"></script>
+    <!-- cdn -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
 
 </head>
 <body>
-    <div class="first" id="second">
-        <h1>
-            heading
-        </h1>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam amet voluptatem omnis saepe veritatis? Ex esse maxime aut optio non provident error, quas, consequatur fugiat doloribus tempora? Cum nam facilis repellat vel, non eos quae, dolore sapiente quam libero necessitatibus. Labore distinctio in, velit ipsa explicabo nemo adipisci reprehenderit dolore.
-    </div>
 
-
-    <script>
-
-        $(document).ready(function(){
-            $(".first").click(function()
-            {
-                $(".first").css("background-color","yellow");
-            });
-       
-            $(".first").dblclick(function()
-            {
-                $(".first").css("background-color","green");
-            });
-
-            $(".first").contextmenu(function()
-            {
-                $(".first").css("background-color","aqua");
-            });
-       
-       
-       
-       
-        });
-
-
-
-    </script>
+    <!-- mount event click,dblclick,contextmenu,mouseleave -->
     
+    <div class="first">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure vitae quasi, dolores veritatis doloremque qui beatae sequi voluptatem atque soluta, repellat, error nisi praesentium? Recusandae eum labore tenetur. Sequi, laboriosam!
+    </div>
+    <input type="button" class="input" value="submit">
+
+<script>
+    $(document).ready(function()
+    {
+            $(".input").click(function()
+            {            
+                $(".first").css("background-color", "red");
+            });
+
+
+            $(".input").dblclick(function()
+            {            
+            alert("done");
+            });
+
+
+             $(".input").contextmenu(function(){
+                $(".first").css("background-color","blue");
+
+             });
+
+             $(".first").mouseenter(function(){
+
+                $(this).css("background-color","aqua");
+             });
+
+
+
+    });
+</script>
 </body>
 </html>
